@@ -1,0 +1,144 @@
+:root {
+    --color1: #535353;
+    --color2: #757575;
+}
+
+/*OSWALD FONT */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;600&display=swap");
+
+/* BEBAS NEUE FONT  */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300;600&display=swap");
+
+* {
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+}
+
+a {
+    color: #535353;
+    text-decoration: none;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: lightblue;
+}
+
+header h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2rem;
+    margin-left: 10%;
+    color: #535353;
+    text-align: right;
+    margin-right: 10%;
+}
+
+header nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+}
+
+header p {
+    text-transform: uppercase;
+    text-align: right;
+    font-weight: bold;
+    text-justify: auto;
+
+}
+
+
+/* --ABOUT ME SECTION-- */
+.about-me {
+    display: flex;
+}
+
+#about-me-text-block {
+    max-height: 75%;
+    overflow: scroll;
+}
+
+
+
+/* --GENERIC CARD STYLING */
+.title-card {
+    width: 45%;
+    text-align: right;
+    margin: 10px;
+    padding: 10px;
+    border-right: 2px inset lightslategray;
+    box-shadow: -7px -7px 5px lightslategray;
+}
+
+.content-box {
+    display: flex;
+    width: 45%;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+
+/* --WEB DEV STUFF-- */
+.web-development {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 2px solid black;
+}
+
+.website-card {
+    padding: 25px;
+    background-color: lightgray;
+    margin: 8px;
+    width: 40%;
+}
+
+.website-card:hover {
+    opacity: 65%;
+}
+
+.web-development h3 {
+    background-color: rgb(90, 90, 90, 80%);
+    color: snow;
+    max-width: 75%;
+    padding: 5%;
+    margin-left: -35px;
+
+}
+
+#audio-website {
+    background-image: url("../images/at\ board\ IG.JPG");
+    background-position: center;
+    background-size: cover;
+}
+
+#pop-punk-form {
+    background-image: url("../images/DSC_0158.JPG");
+    background-position: center;
+    background-size: cover;
+}
+
+#horiseon-sample {
+    background-image: url("../images/digital-marketing-meeting.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* --PYTHON STUFF-- */
+.python-card {
+    padding: 25px;
+    background-color: #7cb3fe;
+    margin: 8px;
+    width: 40%;
+}
+
+.python-card:hover {
+    opacity: 65%;
+}
+
+.python-development {
+    display: flex;
+}
