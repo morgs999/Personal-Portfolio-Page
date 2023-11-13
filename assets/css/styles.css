@@ -22,34 +22,33 @@ a {
 
 /* --HEADER STYLINGS-- */
 header {
-    display: grid;
-    grid-template-columns: 50% 50%;
+    display: flex;
     background-color: lightblue;
     padding: 1.5%;
+    justify-content: space-evenly;
 }
 
 header h2 {
     font-size: 2rem;
-    margin-left: 10%;
     color: #535353;
     text-align: right;
-    margin-right: 10%;
 }
 
 header nav {
     display: flex;
-    max-width: 45%;
-    justify-content: first baseline;
-    align-items: center;
+    max-width: 25%;
+    justify-content: flex-end;
 }
 
 header p {
     text-transform: uppercase;
-    text-align: left;
+    text-align: justify;
     font-weight: bold;
-    /* text-justify: auto; */
-    padding-right: 22%;
-    /* margin-right: 22%; */
+    padding: 5%;
+    margin: auto;
+    margin-left: -5%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .parallax {
@@ -193,4 +192,31 @@ footer p {
 
 footer p:hover {
     opacity: 65%;
+}
+
+
+/* --MEDIA QUERIES FOR VIEWPORTS-- */
+
+@media screen and (max-width: 1134px) {
+    header nav {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        text-align: right;
+    }
+
+    header nav {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    h1 {
+        font-size: 150%;
+    }
 }
