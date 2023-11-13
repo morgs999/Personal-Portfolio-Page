@@ -6,3 +6,7 @@
  - HTML, CSS Examples through custom built websites
  - Python Programs through custom built programs
  - Misc.
+
+
+
+ https://www.w3schools.com/howto/howto_css_parallax.asp

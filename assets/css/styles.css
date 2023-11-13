@@ -1,32 +1,32 @@
-:root {
-    --color1: #535353;
-    --color2: #757575;
-}
-
-/*OSWALD FONT */
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;600&display=swap");
-
-/* BEBAS NEUE FONT  */
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300;600&display=swap");
-
 * {
     box-sizing: border-box;
-    font-family: "Oswald", sans-serif;
+    font-family: "Metropolis", sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: 225%;
 }
 
 a {
-    color: #535353;
+    color: whitesmoke;
     text-decoration: none;
 }
 
+
+/* --HEADER STYLINGS-- */
 header {
     display: grid;
     grid-template-columns: 50% 50%;
     background-color: lightblue;
+    padding: 1.5%;
 }
 
 header h2 {
-    font-family: "Bebas Neue", sans-serif;
     font-size: 2rem;
     margin-left: 10%;
     color: #535353;
@@ -35,28 +35,34 @@ header h2 {
 }
 
 header nav {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
+    max-width: 45%;
+    justify-content: first baseline;
     align-items: center;
 }
 
 header p {
     text-transform: uppercase;
-    text-align: right;
+    text-align: left;
     font-weight: bold;
-    text-justify: auto;
+    /* text-justify: auto; */
+    padding-right: 22%;
+    /* margin-right: 22%; */
+}
 
+.parallax {
+    background-image: url("../images/looking\ down\ side\ on.jpg");
+    min-height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
 /* --ABOUT ME SECTION-- */
 .about-me {
     display: flex;
-}
-
-#about-me-text-block {
-    max-height: 75%;
-    overflow: scroll;
 }
 
 
@@ -127,10 +133,12 @@ header p {
 }
 
 
+
 /* --PYTHON STUFF-- */
 .python-card {
     padding: 25px;
     background-color: #7cb3fe;
+    background-image: url(../images/Python-logo-notext.svg.png);
     margin: 8px;
     width: 40%;
 }
@@ -141,4 +149,48 @@ header p {
 
 .python-development {
     display: flex;
+}
+
+.python-development h3 {
+    background-color: rgb(90, 90, 90, 80%);
+    color: snow;
+    max-width: 75%;
+    padding: 5%;
+    margin-left: -35px;
+
+}
+
+
+/* --FOOTER SECTION-- */
+footer {
+    display: block;
+    background-color: lightblue;
+    padding: 1.5%;
+    justify-content: center;
+    text-align: center;
+}
+
+footer h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2rem;
+    margin-left: 10%;
+    color: #535353;
+    margin-right: 10%;
+}
+
+footer nav {
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+
+footer p {
+    text-transform: uppercase;
+    background-color: #535353;
+    font-weight: bold;
+    padding: 5px;
+}
+
+footer p:hover {
+    opacity: 65%;
 }
